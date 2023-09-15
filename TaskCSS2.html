@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskCSS2</title>
+    <style>
+      #ver-con {
+        border: 1px solid black;
+        padding: 5px;
+        width: 170px;
+      }
+      #ver-con ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: lightblue;
+      }
+      #ver-con li a {
+        padding: 8px 17px;
+        display: block;
+        color: blue;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      #ver-con li a:hover {
+        background-color: orange;
+        color: white;
+      }
+      #hor-con {
+        border: 1px black solid;
+        padding: 3px;
+        display: inline-block;
+      }
+      #hor-con ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: lightgrey;
+      }
+      #hor-con li {
+        display: inline-block;
+      }
+      #hor-con li a {
+        padding: 10px 15px;
+        display: block;
+        color: blue;
+      }
+      #hor-con li a:hover {
+        background-color: grey;
+        color: white;
+        border: solid 1px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Vertical Navigation Bar</h1>
+      <div id="ver-con">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">Bootstrap</a></li>
+        </ul>
+      </div>
+      <h1>Horizantal Navigation Bar</h1>
+      <div id="hor-con">
+        <ul>
+          <li><a id="#">Home</a></li>
+          <li><a id="#">Java</a></li>
+          <li><a id="#">CSS</a></li>
+          <li><a id="#">HTML</a></li>
+          <li><a id="#">Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
