@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskCSS4</title>
+    <style>
+      #bg-cont {
+        height: 100vh;
+        background-size: cover;
+      }
+      #hov-cont a {
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        padding: 15px 23px;
+        width: 100px;
+        border-radius: 5px;
+        left: -100px;
+      }
+      #hov-cont a:hover {
+        left: -3px;
+        transition: 0.5s;
+      }
+      #text-cont {
+        margin-left: 140px;
+        margin-top: 28px;
+      }
+      #abt {
+        top: 30px;
+        background-color: #04aa6d;
+      }
+      #blog {
+        top: 90px;
+        background-color: #2196f3;
+      }
+      #pro {
+        top: 150px;
+        background-color: #f44336;
+      }
+      #con {
+        top: 210px;
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg-cont">
+      <div id="hov-cont">
+        <a id="abt" href="#">About</a>
+        <a id="blog" href="#">Blog</a>
+        <a id="pro" href="#">Projects</a>
+        <a id="con" href="#">Contacts</a>
+      </div>
+      <div id="text-cont">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them</p>
+      </div>
+    </div>
+  </body>
+</html>
