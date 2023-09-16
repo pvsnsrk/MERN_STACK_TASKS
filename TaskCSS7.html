@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskCSS</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      #bg-cont {
+        height: 100vh;
+        background-size: cover;
+        background-color: #d03d56;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      #bg-cont div {
+        background-color: #8b0000;
+      }
+      table {
+        padding: 20px 60px;
+      }
+
+      #rad-ele label {
+        padding-right: 5px;
+      }
+      tr {
+        height: 35px;
+        font-size: 20px;
+      }
+      #button {
+        padding: 10px 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg-cont">
+      <div>
+        <table height="" width="700">
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                placeholder="your name"
+                name="Name"
+                size="40"
+                style="height: 25px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="your email"
+                name="email"
+                size="40"
+                style="height: 25px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                placeholder=""
+                name="Password"
+                size="40"
+                style="height: 25px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="telnumber">Phone Number:</label></td>
+            <td>
+              <input
+                type="tel"
+                id="telnumber"
+                placeholder=""
+                name="Phone_Number"
+                size="40"
+                pattern="[0-9]{10}"
+                style="height: 25px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Gender:</label></td>
+            <td id="rad-ele">
+              <label for="male">Male:</label>
+              <input id="male" type="radio" value="male" name="Gender" />
+              <label for="female">Female:</label>
+              <input id="female" type="radio" value="female" name="Gender" />
+              <label for="Others">Others:</label>
+              <input id="Others" type="radio" value="others" name="Gender" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="language">Language:</label></td>
+            <td>
+              <select id="language" name="Language" style="height: 30px">
+                <option value="">Select Language</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zip">Zip Code:</label></td>
+            <td>
+              <input
+                id="zip"
+                size="40"
+                style="height: 25px; width: 290px"
+                type="number"
+                name="Zip_Code"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zip">About</label></td>
+            <td>
+              <textarea rows="4" cols="38"></textarea>
+            </td>
+          </tr>
+          <tr style="text-align: center">
+            <td colspan="2">
+              <input
+                style="font-size: 16px; margin-top: 10px; font-weight: bolder"
+                id="button"
+                type="submit"
+                value="Register"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
